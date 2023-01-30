@@ -1,0 +1,25 @@
+header {
+  @apply flex w-full font-roboto;
+  box-shadow: 0 8px 24px hsl(210deg 8% 62% / 20%);
+}
+.nav {
+  @apply flex justify-between w-full px-4;
+}
+.ul {
+  @apply flex gap-6 text-xl items-center;
+}
+.li {
+  @apply hover:text-indigo-400 font-roboto font-normal text-base p-2 mt-2;
+}
+.btn {
+  @apply pr-4;
+}
+.user_login {
+  @apply flex items-center gap-2;
+}
+.user_menu {
+  @apply flex items-center;
+}
+.login {
+  @apply mt-1 px-2 hover:text-indigo-400;
+}

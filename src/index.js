@@ -14,6 +14,7 @@ import BestProducts from "./pages/BestProducts";
 import Clothes from "./pages/Clothes";
 import Accessories from "./pages/Accessories";
 import Shoes from "./pages/Shoes";
+import ProtectedRoute from "./pages/ProtectedRoute";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/products/new",
-        element: <NewProdcts />,
+        element: (
+          <ProtectedRoute requireAdmin>
+            <NewProdcts />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "/products/:id",
@@ -56,7 +61,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/carts",
-        element: <MyCarts />,
+        element: (
+          <ProtectedRoute>
+            <MyCarts />
+          </ProtectedRoute>
+        ),
       },
     ],
   },

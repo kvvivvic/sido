@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import { AiOutlineShopping } from "react-icons/ai";
+import { BsFillPencilFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import styles from "../Header/Header.module.css";
+import { login, logout, onUserStateChange } from "../../api/firebase";
+import User from "../User/User";
+import { useAuthContext } from "../context/AuthContext";
 
 const Header = () => {
+  const { user, login, logout } = useAuthContext();
   return (
     <header>
       <nav className={styles.nav}>
@@ -27,11 +32,29 @@ const Header = () => {
             </Link>
           </ul>
         </div>
+
         <div className={styles.user_login}>
-          <button className={styles.login}>LOGIN</button>
-          <Link to="/carts">
-            <AiOutlineShopping />
-          </Link>
+          {user && (
+            <Link to="/carts">
+              <AiOutlineShopping />
+            </Link>
+          )}
+          {user && user.isAdmin && (
+            <Link to="/products/new" className="text-2xl">
+              <BsFillPencilFill />
+            </Link>
+          )}
+          {user && <User user={user} />}
+          {!user && (
+            <button onClick={login} className={styles.login}>
+              LOGIN
+            </button>
+          )}
+          {user && (
+            <button onClick={logout} className={styles.logout}>
+              LOGOUT
+            </button>
+          )}
         </div>
       </nav>
     </header>

@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       en: ["Playfair Display", "Roboto"],
       roboto: ["Roboto", "sans-serif"],
+      lato: ["Lato", "Roboto", "sans-serif"],
     },
   },
   plugins: [],

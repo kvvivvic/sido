@@ -4,7 +4,7 @@ import "./index.css";
 import Home from "./pages/Home";
 import AllProducts from "./pages/AllProducts";
 import MyCarts from "./pages/MyCarts";
-import NewProdcts from "./pages/NewProdcts";
+import NewProducts from "./pages/NewProducts";
 import NotFound from "./pages/NotFound";
 import ProductsDetail from "./pages/ProductsDetail";
 import App from "./App";
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         path: "/products/new",
         element: (
           <ProtectedRoute requireAdmin>
-            <NewProdcts />
+            <NewProducts />
           </ProtectedRoute>
         ),
       },

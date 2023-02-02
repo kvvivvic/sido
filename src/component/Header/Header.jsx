@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
-import Button from "../Button/Button";
-import { AiOutlineShopping } from "react-icons/ai";
+import React from "react";
 import { BsFillPencilFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import styles from "../Header/Header.module.css";
-import { login, logout, onUserStateChange } from "../../api/firebase";
 import User from "../User/User";
-import { useAuthContext } from "../context/AuthContext";
+import { useAuthContext } from "../../context/AuthContext";
+import CartStatus from "../Cart/CartStatus";
 
 const Header = () => {
   const { user, login, logout } = useAuthContext();
@@ -36,7 +34,7 @@ const Header = () => {
         <div className={styles.user_login}>
           {user && (
             <Link to="/carts">
-              <AiOutlineShopping />
+              <CartStatus />
             </Link>
           )}
           {user && user.isAdmin && (

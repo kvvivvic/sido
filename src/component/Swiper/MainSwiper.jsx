@@ -1,8 +1,8 @@
 // import Swiper core and required modules
 import SwiperCore, { Navigation, Pagination, EffectFade, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import React, { useEffect } from "react";
-import Aos from "aos";
+import React from "react";
+
 import "aos/dist/aos.css";
 
 // Import Swiper styles

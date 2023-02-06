@@ -10,7 +10,7 @@ const Products = () => {
     <>
       {isLoading && <p>Loading..</p>}
       {error && <p>{error}</p>}
-      <ul className="grid grid-cols-1 md:grid-cols-3 lg-grid-cols-4 gap-4 p-4">{products && products.map((product) => <ProductCard key={product.id} product={product} />)}</ul>
+      <ul className="flex shrink-0 px-5 pt-12 mt-24 flex-wrap">{products && products.map((product) => <ProductCard key={product.id} product={product} />)}</ul>
     </>
   );
 };

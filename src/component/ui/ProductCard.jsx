@@ -8,9 +8,9 @@ const ProductCard = ({ product, product: { id, image, title, category, price } }
       onClick={() => {
         navigate(`/products/${id}`, { state: { product } });
       }}
-      className="rounded-lg shaodw-md overflow-hidden cursor-pointer"
+      className="p-3 w-3/12 h-auto shaodw-md overflow-hidden cursor-pointer"
     >
-      <img className="w-full" src={image} alt={title} />
+      <img className="w-full h-card" src={image} alt={title} />
       <div className="mt-2 px-2 text-lg flex flex-col">
         <p className=" text-base pb-2 font-en">{category}</p>
         <h3 className="font-roboto">{title}</h3>

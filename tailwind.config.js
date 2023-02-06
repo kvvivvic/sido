@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         spinner: "#ffffffb7",
       },
+      height: {
+        card: "469px",
+      },
     },
     fontFamily: {
       en: ["Playfair Display", "Roboto"],

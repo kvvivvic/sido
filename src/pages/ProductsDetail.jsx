@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { useAuthContext } from "../context/AuthContext";
 import useCart from "../hooks/useCart";
 
 const ProductsDetail = () => {

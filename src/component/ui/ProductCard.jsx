@@ -11,11 +11,11 @@ const ProductCard = ({ product, product: { id, image, title, category, price } }
       className="rounded-lg shaodw-md overflow-hidden cursor-pointer"
     >
       <img className="w-full" src={image} alt={title} />
-      <div className="mt-2 px-2 text-lg flex flex-col items-center">
-        <h3 className="py-2">{title}</h3>
-        <p>{`KRW ${price}`}</p>
+      <div className="mt-2 px-2 text-lg flex flex-col">
+        <p className=" text-base pb-2 font-en">{category}</p>
+        <h3 className="font-roboto">{title}</h3>
+        <p className="font-lato">{`KRW ${price}`}</p>
       </div>
-      <p className="mb-2 px-2 text-gray-600">{category}</p>
     </li>
   );
 };

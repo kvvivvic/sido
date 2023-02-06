@@ -15,6 +15,7 @@ import Clothes from "./pages/Clothes";
 import Accessories from "./pages/Accessories";
 import Shoes from "./pages/Shoes";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import Products from "./component/ui/Products";
 
 const router = createBrowserRouter([
   {
@@ -49,7 +50,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/products/clothes",
-        element: <Clothes />,
+        element: <Products />,
       },
       {
         path: "/products/acc",

@@ -47,9 +47,11 @@ const NewProdcts = () => {
         <input type="text" name="category" value={product.category ?? ""} placeholder="카테고리" required onChange={handleChange} />
         <input type="text" name="title" value={product.title ?? ""} placeholder="제품명" required onChange={handleChange} />
         <input type="number" name="price" value={product.price ?? ""} placeholder="가격" required onChange={handleChange} />
-        <input type="text" name="description" value={product.description ?? ""} placeholder="제품설명" required onChange={handleChange} />
+        <input type="text" name="description" value={product.description ?? ""} placeholder="제품설명" onChange={handleChange} />
         <input type="text" name="options" value={product.options ?? ""} placeholder="옵션들(콤마(,)로 구분)" required onChange={handleChange} />
-        <button disabled={isUploading}>{isUploading ? "업로드 중.." : "제품 등록하기"}</button>
+        <button className="border-indigo-400 h-12 w-36 rounded-lg mt-8 text-white inline-block font-bold bg-indigo-400" disabled={isUploading}>
+          {isUploading ? "업로드 중.." : "제품 등록하기"}
+        </button>
       </form>
     </section>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import useProducts from "../../hooks/useProducts";
+import Loading from "./Loading";
 import ProductCard from "./ProductCard";
 
 const Products = () => {
@@ -8,9 +9,9 @@ const Products = () => {
   } = useProducts();
   return (
     <>
-      {isLoading && <p>Loading..</p>}
+      {isLoading && <Loading />}
       {error && <p>{error}</p>}
-      <ul className="flex shrink-0 px-5 pt-12 mt-24 flex-wrap">{products && products.map((product) => <ProductCard key={product.id} product={product} />)}</ul>
+      <ul className="grid grid-cols-1 md:grid-cols-4  lg-grid-cols-4 gap-1 p-4">{products && products.map((product) => <ProductCard key={product.id} product={product} />)}</ul>
     </>
   );
 };

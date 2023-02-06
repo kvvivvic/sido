@@ -8,7 +8,7 @@ const ProductCard = ({ product, product: { id, image, title, category, price } }
       onClick={() => {
         navigate(`/products/${id}`, { state: { product } });
       }}
-      className="p-3 w-3/12 h-auto shaodw-md overflow-hidden cursor-pointer"
+      className="p-3 w-full h-auto shaodw-md overflow-hidden cursor-pointer"
     >
       <img className="w-full h-card" src={image} alt={title} />
       <div className="mt-2 px-2 text-lg flex flex-col">

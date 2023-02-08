@@ -37,7 +37,7 @@ const Footer = () => {
         </ul>
         <div className="flex justify-center items-center">
           <BsFillPhoneFill className="text-white" />
-          <span className="ml-2 font-en text-sm md:text-xl text-white">010 - 2529 -2232</span>
+          <span className="ml-2 font-en text-xs md:text-xl text-white">010 - 2529 -2232</span>
         </div>
       </div>
     </div>

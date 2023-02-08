@@ -8,12 +8,12 @@ body {
   font-family: "Roboto", "sans-serif", "Playfair Display" "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply flex flex-col items-center;
+  @apply flex flex-col items-center w-screen;
   letter-spacing: -0.04em;
 }
 
 #root {
-  @apply w-full max-w-screen-2xl  relative;
+  @apply w-full relative;
 }
 
 input {

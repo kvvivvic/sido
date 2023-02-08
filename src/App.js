@@ -4,14 +4,20 @@ import { Outlet } from "react-router-dom";
 
 import { AuthContextProvider } from "./context/AuthContext";
 import Header from "./component/Header/Header";
+import Footer from "./component/ui/Footer";
 
 const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthContextProvider>
-        <Header />
-        <Outlet />
+        <div className=" max-w-screen-2xl h-full mx-auto">
+          <Header />
+        </div>
+        <div className=" max-w-screen-2xl h-full mx-auto">
+          <Outlet />
+        </div>
+        <Footer />
       </AuthContextProvider>
     </QueryClientProvider>
   );

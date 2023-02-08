@@ -10,12 +10,12 @@ import ProductsDetail from "./pages/ProductsDetail";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import BestProducts from "./pages/BestProducts";
 
 import Accessories from "./pages/Accessories";
 import Shoes from "./pages/Shoes";
 import ProtectedRoute from "./pages/ProtectedRoute";
 import Products from "./component/ui/Products";
+import Bestproducts from "./component/ui/Bestproducts";
 
 const router = createBrowserRouter([
   {
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/products/best",
-        element: <BestProducts />,
+        element: <Bestproducts />,
       },
       {
         path: "/products/clothes",

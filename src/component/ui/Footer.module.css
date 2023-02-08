@@ -1,0 +1,33 @@
+.list {
+  @apply bg-lightgray;
+  border-radius: 50%;
+  height: 35px;
+  margin: 0 5px;
+  width: 35px;
+}
+.link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.img {
+  left: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.ul {
+  grid-gap: 0 10px;
+  display: grid;
+  grid-template-columns: 35px 35px 35px 35px;
+  justify-content: center;
+}
+
+@media (max-width: 1023px) {
+  .ul {
+    grid-gap: 10px;
+    grid-template-columns: 35px 35px;
+  }
+}

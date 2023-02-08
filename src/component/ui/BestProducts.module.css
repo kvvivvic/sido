@@ -1,0 +1,25 @@
+.title {
+  @apply font-lato text-xl text-center relative;
+}
+.title::before {
+  background: #000;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 40px;
+  top: -10px;
+}
+.title::after {
+  background: #000;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 40px;
+  bottom: -10px;
+}

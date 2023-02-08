@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         spinner: "#ffffffb7",
+        footerbg: "#292929",
+        lightgray: "#575757",
       },
       height: {
         card: "469px",

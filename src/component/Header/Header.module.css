@@ -3,7 +3,7 @@ header {
   box-shadow: 0 8px 24px hsl(210deg 8% 62% / 20%);
 }
 .nav {
-  @apply flex justify-between w-full px-4 mx-auto z-50 bg-slate-50 opacity-90 absolute fixed;
+  @apply flex justify-between w-full px-4 mx-auto z-50 bg-slate-50 opacity-90 max-w-screen-2xl fixed;
 }
 .ul {
   @apply flex gap-6 text-xl items-center;

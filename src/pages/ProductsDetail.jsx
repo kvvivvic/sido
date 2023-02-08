@@ -40,7 +40,9 @@ const ProductsDetail = () => {
             {options && options.map((option, index) => <option key={index}>{option}</option>)}
           </select>
           {success && <p className="my-2">{success}</p>}
-          <button onClick={handleClick}>장바구니에 추가</button>
+          <button className="border border-black w-36 mx-auto font-lato font-bold rounded-sm   " onClick={handleClick}>
+            ADD A CART
+          </button>
         </div>
       </section>
     </>

@@ -1,5 +1,5 @@
 .title {
-  @apply font-lato text-xl text-center relative;
+  @apply font-lato text-xl text-center relative mt-24;
 }
 .title::before {
   background: #000;

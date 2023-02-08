@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ product, product: { id, image, title, category, price } }) => {
   const navigate = useNavigate();
+
   return (
     <li
       onClick={() => {

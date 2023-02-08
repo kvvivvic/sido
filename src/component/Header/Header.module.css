@@ -3,13 +3,13 @@ header {
   box-shadow: 0 8px 24px hsl(210deg 8% 62% / 20%);
 }
 .nav {
-  @apply flex justify-between w-full px-4 mx-auto z-50 bg-slate-50 opacity-90 max-w-screen-2xl fixed;
+  @apply flex justify-between w-full px-4 mx-auto z-40 bg-slate-50 opacity-90 max-w-screen-2xl fixed;
 }
 .ul {
-  @apply flex gap-6 text-xl items-center;
+  @apply flex gap-6 text-xl items-center h-16;
 }
 .li {
-  @apply hover:text-indigo-400 font-roboto font-normal text-base p-2 mt-2;
+  @apply hover:text-indigo-400 font-roboto font-normal text-base p-2 mt-2 hidden md:block;
 }
 .btn {
   @apply pr-4;

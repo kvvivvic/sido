@@ -1,0 +1,9 @@
+.list {
+  @apply py-1 hover:text-indigo-400;
+}
+.btn {
+  @apply absolute w-8 h-8;
+  top: 12%;
+  left: 4%;
+  cursor: pointer;
+}

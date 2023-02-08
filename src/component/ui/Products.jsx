@@ -11,7 +11,10 @@ const Products = () => {
     <>
       {isLoading && <Loading />}
       {error && <p>{error}</p>}
-      <ul className="grid grid-cols-1 md:grid-cols-4  lg-grid-cols-4 gap-1 p-4">{products && products.map((product) => <ProductCard key={product.id} product={product} />)}</ul>
+      <div className="flex justify-center">
+        <h3 className="text-2xl text-center  mt-12 font-en pb-2 border-b-2 border-black">Costume</h3>
+      </div>
+      <ul className="grid grid-cols-1 md:grid-cols-4 mt-12  lg-grid-cols-4 gap-1 p-4">{products && products.map((product) => <ProductCard key={product.id} product={product} />)}</ul>
     </>
   );
 };

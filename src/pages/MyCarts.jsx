@@ -20,7 +20,7 @@ const MyCarts = () => {
   return (
     <section className="p-8 flex flex-col">
       <p className="text-2xl text-center font-bold pb-4 border-b border-gray-300">내 장바구니</p>
-      {!hasProducts && <p>장바구니에 상품이 없습니다. 열심히 쇼핑해 주세요!</p>}
+      {!hasProducts && <p className="font-bold text-lg text-center mt-12 text-indigo-500">장바구니에 상품이 없습니다.</p>}
       {hasProducts && (
         <>
           <ul className="border-b border-gray-300 mb-8 p-4 px-8">{products && products.map((product) => <CartItem key={product.id} product={product} />)}</ul>

@@ -2,7 +2,6 @@ import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth";
 import { getDatabase, ref, get, set, remove } from "firebase/database";
 import { v4 as uuid } from "uuid";
-import { query, orderBy } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -53,6 +52,7 @@ export async function addNewProduct(product, image) {
     price: parseInt(product.price),
     image,
     options: product.options.split(","),
+    timestamp: new Date().toString(),
   });
 }
 

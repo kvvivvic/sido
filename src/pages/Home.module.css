@@ -1,0 +1,6 @@
+.text {
+  @apply flex justify-center absolute z-50 w-full;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, 0);
+}

@@ -11,7 +11,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import BestProducts from "./pages/BestProducts";
-import Clothes from "./pages/Clothes";
+
 import Accessories from "./pages/Accessories";
 import Shoes from "./pages/Shoes";
 import ProtectedRoute from "./pages/ProtectedRoute";

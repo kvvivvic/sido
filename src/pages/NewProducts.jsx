@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { uploadImage } from "../api/uploader";
+import Loading from "../component/ui/Loading";
+import Success from "../component/ui/Success";
 import useProducts from "../hooks/useProducts";
 
 const NewProdcts = () => {
@@ -27,10 +29,10 @@ const NewProdcts = () => {
           { product, url },
           {
             onSuccess: () => {
-              setSuccess("제품 등록 완료");
+              setSuccess(() => <Success />);
               setTimeout(() => {
                 setSuccess(null);
-              }, 4000);
+              }, 100000);
             },
           }
         );
@@ -39,9 +41,9 @@ const NewProdcts = () => {
   };
   return (
     <section className="w-full text-center">
-      <h2 className="text-2xl font-bold my-4">새로운 제품 등록</h2>
+      <h2 className="text-2xl font-bold my-6 border-b-2 border-black inline-block py-4">새로운 제품 등록</h2>
       {success && <p className="my-2">{success}</p>}
-      {file && <img className="w-96 mx-auto mb-2" src={URL.createObjectURL(file)} alt="local file" />}
+      {file && <img className="w-96 mx-auto my-4" src={URL.createObjectURL(file)} alt="local file" />}
       <form className="flex flex-col px-12" onSubmit={handleSubmit}>
         <input type="file" accept="image/*" name="file" required onChange={handleChange} />
         <input type="text" name="category" value={product.category ?? ""} placeholder="카테고리" required onChange={handleChange} />
@@ -50,8 +52,9 @@ const NewProdcts = () => {
         <input type="text" name="description" value={product.description ?? ""} placeholder="제품설명" onChange={handleChange} />
         <input type="text" name="options" value={product.options ?? ""} placeholder="옵션들(콤마(,)로 구분)" required onChange={handleChange} />
         <button className="border-indigo-400 h-12 w-36 rounded-lg mt-8 text-white inline-block font-bold bg-indigo-400" disabled={isUploading}>
-          {isUploading ? "업로드 중.." : "제품 등록하기"}
+          제품 등록하기
         </button>
+        {isUploading && <Loading />}
       </form>
     </section>
   );

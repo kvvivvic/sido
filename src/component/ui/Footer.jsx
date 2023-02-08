@@ -11,7 +11,7 @@ const Footer = () => {
     <div className=" bg-footerbg  h-36  w-full mt-16">
       <div className="flex justify-between items-center w-full h-full mx-auto px-4 md:px-36">
         <div>
-          <span className="font-en text-white font-normal text-sm md:text-lg">Copyright &copy; 2023.GI HWAN KWON</span>
+          <span className="font-en text-white font-normal text-xs md:text-lg">Copyright &copy; 2023.GI HWAN KWON</span>
         </div>
         <ul className={styles.ul}>
           <li className={styles.list}>

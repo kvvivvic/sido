@@ -7,9 +7,12 @@ import { useAuthContext } from "../../context/AuthContext";
 import CartStatus from "../Cart/CartStatus";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { VscChromeClose } from "react-icons/vsc";
+import Menu from "./Menu";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [visible, setVisible] = useState(false);
+
   const { user, login, logout } = useAuthContext();
   return (
     <header>
@@ -18,14 +21,14 @@ const Header = () => {
           <Link to="/">
             <h1 className="text-4xl font-en hover:text-indigo-400 p-2 mr-6 my-1 font-normal hidden md:block">sido.</h1>
           </Link>
+          {visible && <Menu visible={visible} setVisible={setVisible} />}
           <div
             onClick={() => {
-              setOpen((e) => !e);
+              setVisible(!visible);
             }}
             className={styles.menu}
           >
             {!open && <RxHamburgerMenu className="w-6 h-6 cursor-pointer md:hidden z-50 " />}
-            {open && <VscChromeClose className="w-6 h-6 cursor-pointer md:hidden z-50 " />}
           </div>
           <ul className={styles.ul}>
             <Link to="/">

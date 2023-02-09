@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../Header/Menu.module.css";
 import { VscChromeClose } from "react-icons/vsc";
 
-const Menu = () => {
-  const [visible, setVisible] = useState(false);
+const Menu = ({ visible, setVisible }) => {
   return (
     <>
       {visible && (
@@ -12,7 +11,7 @@ const Menu = () => {
           <div>
             <VscChromeClose
               onClick={() => {
-                setVisible();
+                setVisible(!visible);
               }}
               className={styles.btn}
             />
@@ -21,13 +20,13 @@ const Menu = () => {
             <Link to="/">
               <li className={styles.list}>Home</li>
             </Link>
-            <Link to="/">
+            <Link to="/products">
               <li className={styles.list}>Clothes</li>
             </Link>
-            <Link to="/">
+            <Link to="/products/acc">
               <li className={styles.list}>Accessories</li>
             </Link>
-            <Link to="/">
+            <Link to="/products/shoes">
               <li className={styles.list}>Shoes</li>
             </Link>
           </ul>

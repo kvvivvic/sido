@@ -18,7 +18,7 @@ const MyCarts = () => {
   const totalPrice = products && products.reduce((prev, current) => prev + parseInt(current.price) * current.quantity, 0);
 
   return (
-    <section className="p-8 flex flex-col">
+    <section className="p-8 flex flex-col mt-16">
       <p className="text-2xl text-center font-bold pb-4 border-b border-gray-300">내 장바구니</p>
       {!hasProducts && <p className="font-bold text-lg text-center mt-12 text-indigo-500">장바구니에 상품이 없습니다.</p>}
       {hasProducts && (

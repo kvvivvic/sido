@@ -40,8 +40,8 @@ const NewProdcts = () => {
       .finally(() => setIsUploading(false));
   };
   return (
-    <section className="w-full text-center">
-      <h2 className="text-2xl font-bold my-6 border-b-2 border-black inline-block py-4">새로운 제품 등록</h2>
+    <section className="w-full text-center mt-24">
+      <h2 className="text-2xl font-bold mt-6 mb-12 border-b-2 border-black inline-block py-4">새로운 제품 등록</h2>
       {success && <p className="my-2">{success}</p>}
       {file && <img className="w-96 mx-auto my-4" src={URL.createObjectURL(file)} alt="local file" />}
       <form className="flex flex-col px-12" onSubmit={handleSubmit}>

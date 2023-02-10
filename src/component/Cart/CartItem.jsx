@@ -23,11 +23,11 @@ const CartItem = ({ product, product: { id, image, title, option, quantity, pric
         <div className="basis-3/5">
           <p className="text-lg font-bold font-lato">{title}</p>
           <p className="text-xl font-bold text-indigo-400 font-lato">{option}</p>
-          <p>KRW {price}</p>
+          <p className="font-lato font-bold">KRW {price}</p>
         </div>
         <div className="text-2xl flex items-center">
           <AiOutlineMinusCircle className={ICON_CLASS} onClick={handleMinus} />
-          <span>{quantity}</span>
+          <span className="font-lato">{quantity}</span>
           <AiOutlinePlusCircle className={ICON_CLASS} onClick={handlePlus} />
           <RiDeleteBin5Fill className="transiton-all cursor-pointer hover:text-indigo-400 hover:scale-105 mx-1 ml-4" onClick={handleDelete} />
         </div>

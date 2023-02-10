@@ -1,9 +1,12 @@
 header {
-  @apply flex w-full h-auto font-roboto;
+  @apply flex w-full h-auto font-roboto bg-slate-50 fixed z-40 opacity-90;
   box-shadow: 0 8px 24px hsl(210deg 8% 62% / 20%);
 }
+.nav_box {
+  @apply w-full max-w-screen-2xl;
+}
 .nav {
-  @apply flex justify-between w-full px-4 mx-auto z-40 bg-slate-50 opacity-90 max-w-screen-2xl fixed;
+  @apply flex justify-between w-full px-4 mx-auto z-40 bg-slate-50 opacity-90 max-w-screen-2xl;
 }
 .ul {
   @apply flex gap-6 text-xl items-center h-16;

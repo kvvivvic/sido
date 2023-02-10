@@ -7,7 +7,7 @@ const Menu = ({ visible, setVisible }) => {
   return (
     <>
       {visible && (
-        <div className=" fixed top-0 left-0 bg-white w-full max-w-screen-2xl h-auto z-50 ">
+        <div className=" fixed top-0 left-0 bg-white w-full max-w-screen-2xl h-auto z-50 mx-auto md:hidden">
           <div>
             <VscChromeClose
               onClick={() => {

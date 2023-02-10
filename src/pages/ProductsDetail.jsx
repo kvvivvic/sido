@@ -30,8 +30,8 @@ const ProductsDetail = () => {
           <img src={image} alt={title} />
         </div>
         <div className="w-full basis-5/12 md:pl-12 flex flex-col p-4">
-          <h2 className="text-3xl font-bold py-2 border-b border-gray-400">{title}</h2>
-          <p className="text-2xl font-bold py-2">KRW {price}</p>
+          <h2 className="text-3xl font-bold py-2 border-b border-gray-400 font-lato">{title}</h2>
+          <p className="text-2xl font-bold py-2 font-lato">KRW {price}</p>
           <p className="flex items-center">{description}</p>
           <label htmlFor="select" className=" text-indigo-400 font-bold">
             Option :

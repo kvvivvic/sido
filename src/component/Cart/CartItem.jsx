@@ -21,15 +21,15 @@ const CartItem = ({ product, product: { id, image, title, option, quantity, pric
       <img className="w-24 md:w-48 rounded-lg" src={image} alt={title} />
       <div className=" flex-1 flex justify-between ml-4">
         <div className="basis-3/5">
-          <p className="text-lg">{title}</p>
-          <p className="text-xl font-bold text-indigo-400">{option}</p>
+          <p className="text-lg font-bold font-lato">{title}</p>
+          <p className="text-xl font-bold text-indigo-400 font-lato">{option}</p>
           <p>KRW {price}</p>
         </div>
         <div className="text-2xl flex items-center">
           <AiOutlineMinusCircle className={ICON_CLASS} onClick={handleMinus} />
           <span>{quantity}</span>
           <AiOutlinePlusCircle className={ICON_CLASS} onClick={handlePlus} />
-          <RiDeleteBin5Fill className={ICON_CLASS} onClick={handleDelete} />
+          <RiDeleteBin5Fill className="transiton-all cursor-pointer hover:text-indigo-400 hover:scale-105 mx-1 ml-4" onClick={handleDelete} />
         </div>
       </div>
     </li>

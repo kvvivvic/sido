@@ -11,7 +11,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthContextProvider>
-        <div className=" max-w-screen-2xl h-full mx-auto">
+        <div className="w-full h-full mx-auto">
           <Header />
         </div>
         <div className=" max-w-screen-2xl h-full mx-auto">

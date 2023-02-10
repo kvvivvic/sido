@@ -5,7 +5,7 @@ import BestProductsCard from "../ui/BestProductsCard";
 
 const Bestproducts = () => {
   const {
-    productsQuery: { isLoading, error, data: products },
+    productsQuery: { data: products },
   } = useProducts();
   return (
     <section>

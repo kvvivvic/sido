@@ -24,12 +24,12 @@ const ProductsDetail = () => {
   };
   return (
     <>
-      <p className="mx-8 mt-4 inline-block border bg-indigo-400 text-white font-bold text-sm px-2 py-1 rounded-lg">{category}</p>
       <section className="flex flex-col md:flex-row p-4">
-        <div className="w-full basis-7/12 px-4">
-          <img src={image} alt={title} />
+        <div className="w-full basis-7/12 p-24 pb-4 md:p-24">
+          <img className=" w-96 mx-auto md:w-3/4" src={image} alt={title} />
         </div>
-        <div className="w-full basis-5/12 md:pl-12 flex flex-col p-4">
+        <div className="w-full basis-5/12 md:pl-12 flex flex-col p-4 pt-4 md:pt-24">
+          <p className=" w-20 text-center inline-block border bg-indigo-400 text-white font-bold text-sm px-2 py-1 rounded-lg">{category}</p>
           <h2 className="text-3xl font-bold py-2 border-b border-gray-400 font-lato">{title}</h2>
           <p className="text-2xl font-bold py-2 font-lato">KRW {price}</p>
           <p className="flex items-center">{description}</p>
@@ -40,7 +40,7 @@ const ProductsDetail = () => {
             {options && options.map((option, index) => <option key={index}>{option}</option>)}
           </select>
           {success && <p className="my-2">{success}</p>}
-          <button className="border border-black w-36 mx-auto font-lato font-bold rounded-sm   " onClick={handleClick}>
+          <button className="border border-black w-36 mx-auto font-lato font-bold rounded-sm hover:scale-105" onClick={handleClick}>
             ADD A CART
           </button>
         </div>

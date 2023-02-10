@@ -11,7 +11,8 @@ const ProductCard = ({ product, product: { id, image, title, category, price } }
       }}
       className="p-3 w-full h-auto shaodw-md overflow-hidden cursor-pointer"
     >
-      <img className="w-full h-card" src={image} alt={title} />
+      <img className="w-full mx-auto h-card" src={image} alt={title} />
+
       <div className="mt-2 px-2 text-lg flex flex-col">
         <p className="text-indigo-400 text-xs pb-2 font-en md:text-base">{category}</p>
         <h3 className=" font-roboto text-sm md:text-base">{title}</h3>

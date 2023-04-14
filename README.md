@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Sido
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [https://sido-fcc8b.web.app/](https://sido-fcc8b.web.app/)
 
-## Available Scripts
+## 프로젝트 보고서
 
-In the project directory, you can run:
+---
 
-### `npm start`
+### 사용 Skill
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- Firebase
+- tailwindcss
+- node.js
+- React-Query
+- React-router-dom
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 사이트 설명
 
-### `npm test`
+- Sido 사이트는 React를 활용한 SPA 쇼핑몰 사이트 입니다.
+- 여러가지 React Hook 들을 사용했습니다 .
+- Component 화 하는것에 집중하여 재사용 가능한 Component 들로 구성되어져 있습니다.
+- Firebase를 통한 Hosting 과 실시간 DB 관리를 하였습니다.
+- Cloudinary를 활용하여 웹에서 바로 이미지를 불러옵니다.
+- POST CSS , TailwindCss로 디자인 되었습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 주요기능
 
-### `npm run build`
+- 반응형 디자인
+- Firebase를 활용한 구글 로그인 , Realtime DB관리
+- 장바구니 기능
+- 관리자 일 때 새로운 제품 등록하는 기능
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 메인 페이지
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![스크린샷 2023-04-14 오전 11 17 41](https://user-images.githubusercontent.com/100986167/231929828-2f4c16ac-1d9c-48d2-9c59-6fde812dcd5a.jpg)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 서브페이지
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 장바구니
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![스크린샷 2023-04-14 오전 11 18 34](https://user-images.githubusercontent.com/100986167/231929839-5d91a7d5-d63d-4044-ad8d-3a9acf9bd44a.jpg)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 제품 등록 페이지
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![스크린샷 2023-04-14 오전 11 18 55](https://user-images.githubusercontent.com/100986167/231929858-6c4d8c7c-7b4e-491d-981b-d1194816d640.jpg)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🚀주요기능
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### React 로 제작된 SPA 사이트 입니다.
 
-### Making a Progressive Web App
+### 반응형 웹 사이트 입니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Firebase 와 연동하여 Google 계정으로 로그인이 가능합니다.
 
-### Advanced Configuration
+![구글로그인](https://user-images.githubusercontent.com/100986167/231929886-af0f5ab0-8e65-405f-83f8-33e783b35b97.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### Firebase의 DB를 이용해 제품을 등록,관리 할 수 있습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img width="1272" alt="스크린샷 2023-04-14 오전 11 45 55" src="https://user-images.githubusercontent.com/100986167/231929910-ae519c88-c492-420a-a875-c918f6c9a852.png">
 
-### `npm run build` fails to minify
+![시도 제품등록](https://user-images.githubusercontent.com/100986167/231929951-129a2d2c-6df6-446c-b313-2cc0298c6ccc.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### 회원이 제품을 장바구니에 등록하고 장바구니에 넣은 정보를 볼 수 있습니다.
+
+![시도 장바구니](https://user-images.githubusercontent.com/100986167/231929986-c6a70531-c06a-4454-a703-40ab53a6ff82.gif)
